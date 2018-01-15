@@ -44,8 +44,8 @@ if __name__ == '__main__':
             event = mainWindow.getch()
             if event in [KEY_LEFT, KEY_RIGHT]:
                 tetromino.update(event)
-            if event == curses.KEY_F4:
+            if event == ord('q'):
                 break
-        if mainWindow.getch() == curses.KEY_F4:
+        if mainWindow.getch() == ord('q'):
             break
     curses.endwin()
